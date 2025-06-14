@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#lectures">Lectures</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="pf-nav">
+      <div class="logo">Portfolio</div>
+      <div class="pf-menu">
+        <div class="pf-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#lectures" onclick="toggleMenu()">Lectures</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/TP.png" alt="Thejani Kaluarachchi profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+        <h1 class="title">Thejani Kaluarachchi</h1>
+        <p class="section__text__p2">Web Designer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Thejani Hansini CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.location.href='./#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="window.open('https://github.com/')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Tabout-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/higher.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Higher Education</h3>
+              <p>Undergraduate <br />Studied at SLIIT CITY UNI</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>AL Pass <br />Studied at Kegalle Central</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a undergraduate student at SLIT CITY UNI with two years of
+              academic experience. Processing a strong foundation in OOP and
+              DBMS. I am eager to apply my logical knowledge in a practical
+              setting through an internship opportunity.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title prject-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title prject-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#lectures'"
+      />
+    </section>
+    <section id="lectures">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Lectures & Workshops</h1>
+      <div class="lecture-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Portfolio Management</h2>
+            <div class="lectures-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Purpose:</h3>
+                  <p>
+                    Showcases skills, achievements, and work samples for jobs,
+                    education, or career growth.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Types:</h3>
+                  <p>Personal (creative work)</p>
+                  <p>Career (resume, references)</p>
+                  <p>Employment (work evidence)</p>
+                  <p>Assessment (learning progress)</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Key Steps:</h3>
+                  <p>
+                    HDefine purpose → Collect materials → Organize → Highlight
+                    achievements → Update regularly.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tools:</h3>
+                  <p>LinkedIn, Behance, Wix, WordPress, GitHub (for tech).</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tips:</h3>
+                  <p>
+                    Keep professional, tailor to audience, protect privacy,
+                    practice presenting
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Food Festival</h2>
+            <div class="lectures-article-container">
+              <article>
+                <div class="lecture-img">
+                  <img
+                    src="./assets/WhatsApp Image 2025-06-14 at 11.35.29 AM.jpeg"
+                    alt="Food Festival"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">CV Writting</h2>
+            <div class="lectures-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Purpose:</h3>
+                  <p>CV showcases your qualifications for jobs.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Key Sections:</h3>
+                  <p>
+                    Personal info, summary, work experience, education, skills,
+                    achievements.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailoring:</h3>
+                  <p>
+                    Customize for each job using keywords from the job
+                    description.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Format:</h3>
+                  <p>
+                    Clear, consistent, error-free, with bullet points and white
+                    space.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Avoid:</h3>
+                  <p>Irrelevant info, typos, inconsistent formatting.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Goal:</h3>
+                  <p>
+                    Stand out to employers and pass automated screening (ATS).
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Job Interviews</h2>
+            <div class="lectures-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Goal:</h3>
+                  <p>
+                    Master verbal/non-verbal communication (93% is non-verbal:
+                    tone + body language).
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Prep:</h3>
+                  <p>
+                    Research company/job, practice answers, dress
+                    professionally.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Do’s:</h3>
+                  <p>Smile, eye contact, confident posture.</p>
+                  <p>Use specifics/examples, industry terms.</p>
+                  <p>Ask questions; listen actively.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Avoid:</h3>
+                  <p>
+                    Vague answers, negativity, no eye contact, short replies.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Structure Answers:</h3>
+                  <p>"STAR" method (Situation, Task, Action, Result).</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Carrer Fair</h2>
+            <div class="lectures-article-container">
+              <article>
+                <div class="lecture-img">
+                  <img src="./assets/c2.png" alt="Career 1" />
+                  <img src="./assets/c1.png" alt="Career 2" />
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Negotiation Skills</h2>
+            <div class="lectures-article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Goal:</h3>
+                  <p>
+                    Reach win-win agreements using BATNA (best alternative) and
+                    ZOPA (zone of possible agreement).
+                  </p>
+                  
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Key Steps:</h3>
+                  <p><b>Prepare:</b> Research, set goals, know your limits.</p>
+                  <p><b>Listen Actively:</b> Understand needs, ask questions.</p>
+                  <p><b>Communicate Clearly:</b> Use facts, stay calm, adapt style.</p>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="lecture icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tips:</h3>
+                  <p>Build rapport & trust.</p>
+                  <p>Offer creative solutions.</p>
+                  <p>Watch non-verbal cues.</p>
+                  <p>Be ready to walk away if needed.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png "
+            alt="Email Icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:thejanikaluarachchi18@gmail.com"
+              >thejanikaluarachchi18@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png "
+            alt="LinkedIn Icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#lectures">Lectures</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Thejani Kaluarachchi. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
